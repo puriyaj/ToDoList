@@ -34,7 +34,7 @@ app.get("/", function(req, res) {
       res.redirect("/");
     }
     else{
-      const day = date.getDate();
+      const day = "Today";
       res.render("list", {listTitle: day, newListItems: itemss});
       } 
 
